@@ -1,0 +1,22 @@
+{
+    "name": "@@vendor/@@plugin",
+    "description": "@@Plugin Monitor",
+    "keywords": ["laravel", "bundle"],
+    "type": "laravel-bundle",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "@@git_username",
+            "email": "@@git_email"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "@@Vendor\\@@Plugin\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/vendor
+/resources/vendor
+/node_modules
+/public/storage
+Homestead.yaml
+Homestead.json
+.env
+composer.lock
+composer.phar
+/public/build/
+/public/js
+/public/css
+/public/vendor
+/public/templates
+/docs/_book
+/docs/node_modules
+_reports

@@ -1,0 +1,22 @@
+{
+    "name": "fidias/sound",
+    "description": "Sound Monitor",
+    "keywords": ["laravel", "bundle"],
+    "type": "laravel-bundle",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Léo Cândido",
+            "email": "www.leocandido@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fidias\\Sound\\": "src/"
+        }
+    }
+}

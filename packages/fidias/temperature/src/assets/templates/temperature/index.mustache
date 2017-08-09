@@ -1,0 +1,28 @@
+<!-- Mustache template -->
+<div class="col-xs-12 col-sm-6 col-md-4" style="order: {{order}}">
+    <div class="box box-solid box-primary">
+        <div class="box-header">
+            <h3 class="box-title">{{data.description}}</h3>
+        </div>
+        <div class="box-body">
+            <div>
+                Type: {{data.type}}, Unit: {{data.unit}}
+            </div>
+            <div>
+                Min.: {{data.min}}, Max.: {{data.max}}
+            </div>
+        </div>
+        <div class="box-footer">
+            <div class="btn-group pull-right">
+                <a href="/temperature/{{id}}/edit" class="btn btn-default btn-sm">
+                    <i class="fa fa-edit"></i>
+                    Edit
+                </a>
+                <a href="/monitor/{{id}}" class="btn btn-default btn-sm">
+                    <i class="fa fa-chevron-right"></i>
+                    View
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

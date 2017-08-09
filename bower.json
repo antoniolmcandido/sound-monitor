@@ -1,0 +1,30 @@
+{
+  "name": "wireless-monitor",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Átila Camurça <camurca.home@gmail.com>"
+  ],
+  "license": "GPLv3",
+  "homepage": "https://github.com/SanUSB-grupo/wireless-monitor",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-knob": "1.2.13",
+    "mustache.js": "mustache#2.2.1",
+    "requirejs": "^2.2.0",
+    "jquery": "^3.1.0",
+    "moment": "^2.14.1",
+    "balloon.css": "*",
+    "bootswatch": "^3.3.7",
+    "chart.js": "^2.3.0",
+    "lity": "^2.2.2"
+  }
+}
