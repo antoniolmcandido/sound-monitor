@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}"/>
         <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}"/>
-        <title>Wireless Monitor</title>
+        <title>Monitor de Ruídos Sonoros</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" crossorigin="anonymous">
@@ -39,13 +39,30 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        <li class="@isActive('/monitor')">
-                            <a href="{{ url('/monitor') }}">
-                                    Monitors
-                            </a>
-                        </li>
-                    </ul>
+                    @if (Auth::guest())
+                        <ul class="nav navbar-nav">
+                            <li class="@isActive('/ruidos')">
+                                <a href="{{ url('/ruidos') }}">
+                                    Projeto Ruídos Sonoros
+                                </a>
+                            </li>
+                        </ul>
+                    @else
+                        <ul class="nav navbar-nav">
+                            <li class="@isActive('/ruidos')">
+                                <a href="{{ url('/ruidos') }}">
+                                    Projeto Ruídos Sonoros
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="@isActive('/monitor')">
+                                <a href="{{ url('/monitor') }}">
+                                        Monitores
+                                </a>
+                            </li>
+                        </ul>
+                    @endif
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
@@ -55,7 +72,7 @@
                                 <a href="{{ url('/login') }}">Login</a>
                             </li>
                             <li class="@isActive('/register')">
-                                <a href="{{ url('/register') }}">Register</a>
+                                <a href="{{ url('/register') }}">Registro</a>
                             </li>
                         @else
                             <li class="dropdown">
@@ -85,14 +102,14 @@
                                 <a href="https://github.com/sanusb-grupo/wireless-monitor"
                                     target="_blank">
                                     <i class="fa fa-github"></i>
-                                    Source Code
+                                    Código Fonte
                                 </a>
                             </li>
                             <li>
                                 <a href="https://sanusb-grupo.github.io/wireless-monitor/"
                                     target="_blank">
                                     <i class="fa fa-book"></i>
-                                    Documentation
+                                    Documentação
                                 </a>
                             </li>
                         </ul>

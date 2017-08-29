@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            {!! BootForm::submit('Save') !!}
+            {!! BootForm::submit('Salvar') !!}
             {!! BootForm::close() !!}
         </div>
     </div>

@@ -21,19 +21,19 @@
             <li role="presentation">
                 <a href="#setup" aria-controls="setup" role="tab"
                     data-toggle="tab" id="tab-setup">
-                    Setup
+                    Configuração
                 </a>
             </li>
             <li role="presentation">
                 <a href="#test" aria-controls="view" role="tab"
                     data-toggle="tab">
-                    Test
+                    Testes
                 </a>
             </li>
             <li role="presentation" class="active">
                 <a href="#view" aria-controls="view" role="tab"
                     data-toggle="tab">
-                    View Data
+                    Dados
                 </a>
             </li>
         </ul>

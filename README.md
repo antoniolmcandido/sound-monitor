@@ -1,76 +1,61 @@
-# Wireless Monitor
+# Monitoramento de Ruidos Sonoros Online
 
-[![Build Status](https://travis-ci.org/SanUSB-grupo/wireless-monitor.svg?branch=master)](https://travis-ci.org/SanUSB-grupo/wireless-monitor)
+Aplicativo web para realizar o monitoramento de ruidos sonoros
 
-Aplicativo web para receber e mostrar dados vindos de equipamentos IOT.
+em Bibliotecas de Instituições de Ensino
 
-Web app to receive and show data that comes from IOT devices.
+## Documentação
 
-## Documentation
+<https://github.com/leocandido/sound-monitor/>
 
-<https://sanusb-grupo.github.io/wireless-monitor/>
+## Como começar
 
-## Getting Started
+Instale o composer de <getcomposer.org>
 
-Install composer from <getcomposer.org>
-
-Install dependencies
+Instale as dependências
 
 ~~~bash
 php composer.phar install
 ~~~
 
-Create `.env` file
+Crie o arquivo `.env`
 
 ~~~bash
 cp .env.example .env
 ~~~
 
-Generate key for JWT
+Gere a chave para JWT
 
 ~~~bash
 php artisan key:generate
 ~~~
 
-Migrate database (first time only)
+Migre os dados
 
 ~~~bash
 php artisan migrate
 ~~~
 
-Start the local server
+Inicie o servidor local
 
 ~~~bash
 php artisan serve
 ~~~
 
-## Testing
+## Licença
 
-`php vendor/bin/phpunit`
-
-### Testing a package
-
-`php vendor/bin/phpunit packages/fidias/blinkleds/`
-
-### With code coverage option
-
-`php vendor/bin/phpunit --coverage-html _reports/coverage/`
-
-## License
-
-Copyright (C) 2016 Átila Camurça <camurca.home@gmail.com>
+Copyright (C) 2017 Léo Cândido <www.leocandido@gmail.com>
 
 Grupo SanUSB <http://sanusb.org>
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+Este programa é um software livre: você pode redistribuí-lo e/ou modificar.
+Está sob os termos da GNU General Public License, conforme publicado pela
+Free Software Foundation, requer a versão 3 da Licença.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+Este programa é distribuído na esperança de que seja útil,
+Mas SEM QUALQUER GARANTIA; Sem a garantia implícita de
+COMERCIALIZAÇÃO OU APTIDÃO PARA UM PROPÓSITO ESPECÍFICO. Veja o
+GNU General Public License para obter mais detalhes.
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+Você deve ter recebido uma cópia da GNU General Public License
+Junto com este programa. Caso contrário, veja <http://www.gnu.org/licenses/>.

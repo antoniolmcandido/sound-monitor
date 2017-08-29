@@ -1,11 +1,11 @@
 @extends('layouts.skeleton')
 
 @push('scripts')
-    <script src="{{ elixir('js/welcome.js') }}"></script>
+<script src="{{ elixir('js/welcome.js') }}"></script>
 @endpush
 
 @push('styles')
-    <link href="{{ elixir('css/welcome.css') }}" rel="stylesheet">
+<link href="{{ elixir('css/welcome.css') }}" rel="stylesheet">
 @endpush
 
 @section('container')
@@ -35,8 +35,8 @@
                 </p>
                 <div class="btn-group">
                     <a href="https://sanusb-grupo.github.io/wireless-monitor/pt-br/plugin-development.html"
-                        class="btn btn-info"
-                        target="_blank">
+                       class="btn btn-info"
+                       target="_blank">
                         Plugin para Desenvolvimento
                     </a>
                     <a href="{{ url('/monitor') }}" class="btn btn-primary">Modelos Disponíveis</a>
@@ -45,8 +45,8 @@
             <div class="col-md-6">
                 <a href="https://youtu.be/iTczyDZeSWk" data-lity title="Watch Video">
                     <img alt="monitor"
-                        src="{{ asset('img/welcome/create-temperature-monitor.png') }}"
-                        class="img-rounded img-responsive img-shadow" />
+                         src="{{ asset('img/welcome/create-temperature-monitor.png') }}"
+                         class="img-rounded img-responsive img-shadow" />
                 </a>
             </div>
         </div>
@@ -55,8 +55,8 @@
             <div class="col-md-6">
                 <a href="https://youtu.be/UgcgAXTp-9c" data-lity title="Watch Video">
                     <img alt="monitor"
-                        src="{{ asset('img/welcome/using-sdk.png') }}"
-                        class="img-rounded img-responsive img-shadow" />
+                         src="{{ asset('img/welcome/using-sdk.png') }}"
+                         class="img-rounded img-responsive img-shadow" />
                 </a>
             </div>
             <div class="col-md-6">
@@ -74,13 +74,13 @@
                 </p>
                 <div class="btn-group">
                     <a href="https://github.com/SanUSB-grupo/wm-sdk-js"
-                        class="btn btn-info"
-                        target="_blank">
+                       class="btn btn-info"
+                       target="_blank">
                         Código fonte
                     </a>
                     <a href="https://sanusb-grupo.github.io/wm-sdk-js/en/api.html"
-                        class="btn btn-primary"
-                        target="_blank">
+                       class="btn btn-primary"
+                       target="_blank">
                         Documentação da API
                     </a>
                 </div>
@@ -163,18 +163,18 @@
                 </p>
                 <div class="btn-group">
                     <a href="https://sanusb-grupo.github.io/wireless-monitor/pt-br/api-endpoints/post_api-authenticate.html"
-                        class="btn btn-primary"
-                        target="_blank">
+                       class="btn btn-primary"
+                       target="_blank">
                         Autenticação API
                     </a>
                     <a href="https://sanusb-grupo.github.io/wireless-monitor/pt-br/api-endpoints/post_api-send.html"
-                        class="btn btn-primary"
-                        target="_blank">
+                       class="btn btn-primary"
+                       target="_blank">
                         Envio API
                     </a>
                     <a href="https://sanusb-grupo.github.io/wireless-monitor/pt-br/api-endpoints/get_api-refresh-token.html"
-                        class="btn btn-primary"
-                        target="_blank">
+                       class="btn btn-primary"
+                       target="_blank">
                         Atualizar Token API
                     </a>
                 </div>
@@ -182,8 +182,8 @@
             <div class="col-md-6">
                 <a href="https://youtu.be/Fo9e7soNsLE" data-lity title="Watch Video">
                     <img alt="monitor"
-                        src="{{ asset('img/welcome/test-send-data.png') }}"
-                        class="img-rounded img-responsive img-shadow" />
+                         src="{{ asset('img/welcome/test-send-data.png') }}"
+                         class="img-rounded img-responsive img-shadow" />
                 </a>
             </div>
         </div>
@@ -201,8 +201,8 @@
                         GPLv3.
                     </p>
                     <a href="https://github.com/sanusb-grupo/wireless-monitor"
-                        class="btn btn-primary btn-lg"
-                        target="_blank">
+                       class="btn btn-primary btn-lg"
+                       target="_blank">
                         Abrir no Github
                     </a>
                 </div>
@@ -214,8 +214,8 @@
                         desenvolvimento da API e dos Plugins.
                     </p>
                     <a href="https://sanusb-grupo.github.io/wireless-monitor/"
-                        class="btn btn-primary btn-lg"
-                        target="_blank">
+                       class="btn btn-primary btn-lg"
+                       target="_blank">
                         Ver
                     </a>
                 </div>
@@ -226,8 +226,8 @@
                         Leia o artigo que descreve como o projeto foi idealizado e desenvolvido.
                     </p>
                     <a href="https://github.com/atilacamurca/wireless-monitor-paper/blob/master/main.pdf"
-                        class="btn btn-primary btn-lg"
-                        target="_blank">
+                       class="btn btn-primary btn-lg"
+                       target="_blank">
                         Ler
                     </a>
                 </div>

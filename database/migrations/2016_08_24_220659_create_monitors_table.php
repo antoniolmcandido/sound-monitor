@@ -15,7 +15,7 @@ class CreateMonitorsTable extends Migration
         Schema::create('monitors', function (Blueprint $table) {
             $table->increments('id');
             $table->uuid('monitor_key')->unique();
-            $table->json('data');
+            $table->text('data');
             $table->integer('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

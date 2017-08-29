@@ -14,7 +14,7 @@ class CreateMeasuresTable extends Migration
     {
         Schema::create('measures', function (Blueprint $table) {
             $table->increments('id');
-            $table->json('data');
+            $table->text('data');
             $table->integer('monitor_id');
             $table->foreign('monitor_id')->references('id')->on('monitors');
             $table->timestamps();

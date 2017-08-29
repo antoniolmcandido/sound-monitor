@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@welcome');
+Route::get('/ruidos', 'RuidosController@ruidos');
 
 Route::auth();
 
