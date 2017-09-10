@@ -89,8 +89,8 @@ elixir(function(mix) {
 
     // custom commands
     mix.copyMustache('./packages/**/*.mustache', './public/templates');
-    mix.copyComponents('./packages/**/components/*.js',
-        './public/js/monitors/components', {inProduction: inProduction});
+    mix.copyComponents('./packages/**/extras/*.js',
+        './public/js/monitors/extras', {inProduction: inProduction});
 });
 
 var options = minimist(process.argv.slice(2));
@@ -119,7 +119,7 @@ gulp.task('create-plugin', function () {
         './package-template/composer.json',
         './package-template/src/migrations/insert_plugin_monitor.php',
         './package-template/src/Http/Controllers/PluginController.php',
-        './package-template/src/assets/components/plugin.js',
+        './package-template/src/assets/extras/plugin.js',
         './package-template/src/storage/json-schema/plugin.json',
         './package-template/src/storage/json-schema/plugin-example.json',
         './package-template/src/assets/templates/plugin/index.mustache',

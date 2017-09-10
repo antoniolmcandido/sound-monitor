@@ -18,7 +18,7 @@ Elixir.extend('copyMustache', function(src, output, options) {
 
 Elixir.extend('copyComponents', function (src, output, options) {
     var inProduction = options.inProduction;
-    new Task('copy-components', function () {
+    new Task('copy-extras', function () {
         return gulp.src(src)
             .pipe(flatten())
             .pipe(gulpif(inProduction, uglify()))

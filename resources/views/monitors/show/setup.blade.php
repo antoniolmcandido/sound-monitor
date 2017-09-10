@@ -21,7 +21,7 @@
                 <p>
                     Então você vai precisar coletar os dados com algum tipo de sensor.
                 </p>
-                <a href="https://sanusb-grupo.github.io/wireless-monitor/pt-br/index.html"
+                <a href="https://github.com/leocandido/sound-monitor"
                     class="btn btn-primary btn-block"
                     target="_blank">
                     Veja a documentação
