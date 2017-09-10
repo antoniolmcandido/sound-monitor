@@ -1,3 +1,4 @@
+.idea
 /vendor
 /resources/vendor
 /node_modules
@@ -12,6 +13,8 @@ composer.phar
 /public/css
 /public/vendor
 /public/templates
+/public/level
+/public/graphic
 /docs/_book
 /docs/node_modules
 _reports

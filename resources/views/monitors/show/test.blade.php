@@ -23,7 +23,7 @@
             <a href="#view" data-toggle="tab" class="btn btn-primary">
                 Visualizar os dados
             </a>
-            <a href="https://sanusb-grupo.github.io/wireless-monitor/pt-br/api-endpoints/index.html"
+            <a href="https://github.com/leocandido/sound-monitor"
                 class="btn btn-default"
                 target="_blank">
                 Documentação da API

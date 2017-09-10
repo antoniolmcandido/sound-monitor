@@ -16,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Blade::directive('isActive', function ($route) {
             return "<?php echo URL::current() == URL::to{$route} ? 'active' : ''; ?>";
-        });
+        });		
     }
 
     /**

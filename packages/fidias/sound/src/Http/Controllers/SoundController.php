@@ -16,7 +16,7 @@ class SoundController extends AbstractMonitorController
 
     public function create()
     {
-        $title = 'Criar Novo Monitor de Ruidos Sonoros';
+        $title = 'Novo Monitor Sound';
         $model = null;
         return view('sound::save', [
             'title' => $title,
@@ -31,14 +31,14 @@ class SoundController extends AbstractMonitorController
         $result = $request->toArray();
         $result['type'] = 'sound';
         $monitor = $this->_save($result);
-        flash('Monitor de Ruidos Sonoros criado com Sucesso!')->success()->important();
+        flash('Sound Monitor created successfully.')->success()->important();
         return redirect("/monitor/{$monitor->id}");
     }
 
     public function edit($id)
     {
         $monitor = $this->_getMonitor($id);
-        $title = 'Editar Monitor de Ruídos Sonoros';
+        $title = 'Edit Sound Monitor';
 
         return view('sound::save', [
             'title' => $title,

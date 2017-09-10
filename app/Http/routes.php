@@ -12,7 +12,6 @@
 */
 
 Route::get('/', 'HomeController@welcome');
-Route::get('/ruidos', 'RuidosController@ruidos');
 
 Route::auth();
 
@@ -21,6 +20,7 @@ Route::get('/monitor/ajax-list', 'MonitorController@ajaxList');
 Route::get('/monitor/ajax-get', 'MonitorController@ajaxGet');
 Route::get('/monitor/ajax-get-measures', 'MonitorController@ajaxGetMeasures');
 Route::get('/monitor/{id}', 'MonitorController@show');
+
 // TODO: create route inside the package!
 // HACK: route created here so the authentication can protect the URL
 Route::resource('photoresistor', '\Fidias\Photoresistor\Http\Controllers\PhotoresistorController');

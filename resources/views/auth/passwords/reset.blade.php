@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                        <label for="password-confirm" class="col-md-4 control-label">Confirme a Senha</label>
+                        <label for="password-confirm" class="col-md-4 control-label">Confirmar Senha</label>
                         <div class="col-md-6">
                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
 
@@ -56,7 +56,7 @@
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-4">
                             <button type="submit" class="btn btn-primary">
-                                <i class="fa fa-btn fa-refresh"></i> Resetar
+                                <i class="fa fa-btn fa-refresh"></i> Resetar Senha
                             </button>
                         </div>
                     </div>

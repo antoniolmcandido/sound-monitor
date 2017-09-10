@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('scripts')
-    <script src="{{ url('extras') }}"></script>
+    <script src="{{ url('js/monitors/components/blinkleds-index.js') }}"></script>
 @endpush
 
 @section('content')

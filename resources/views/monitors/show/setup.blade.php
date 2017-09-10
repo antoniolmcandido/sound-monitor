@@ -25,7 +25,7 @@
                     class="btn btn-primary btn-block"
                     target="_blank">
                     Veja a documentação
-                </a>
+                </a>            
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
                     para o endpoint <code>/api/authenticate</code>.
                     Depois disso receberá um <code>token</code>.
                 </p>
-            </div>
+            </div>            
         </div>
     </div>
     <div class="col-md-4">

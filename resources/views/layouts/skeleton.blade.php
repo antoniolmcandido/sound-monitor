@@ -33,46 +33,39 @@
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                         <img alt="logo" src="{{ asset('img/logo.png') }}" />
-                        Wireless Monitor
+                        Monitor de Ruídos Sonoros
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    @if (Auth::guest())
-                        <ul class="nav navbar-nav">
-                            <li class="@isActive('/ruidos')">
-                                <a href="{{ url('/ruidos') }}">
-                                    Projeto Ruídos Sonoros
-                                </a>
-                            </li>
-                        </ul>
-                    @else
-                        <ul class="nav navbar-nav">
-                            <li class="@isActive('/ruidos')">
-                                <a href="{{ url('/ruidos') }}">
-                                    Projeto Ruídos Sonoros
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav">
-                            <li class="@isActive('/monitor')">
-                                <a href="{{ url('/monitor') }}">
-                                        Monitores
-                                </a>
-                            </li>
-                        </ul>
-                    @endif
+                    <ul class="nav navbar-nav">
+                        @if (Auth::guest())							
+						
+						
+						@else
+							<li class="@isActive('/monitor')">
+								<a href="{{ url('/monitor') }}">
+										Monitores
+								</a>
+							</li>
+							<li class="@isActive('/phppgadmin')">
+								<a href="{{ url('/phppgadmin') }}" target="_blank">
+										Banco de Dados
+								</a>
+							</li>
+						@endif
+                    </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li class="@isActive('/login')">
-                                <a href="{{ url('/login') }}">Login</a>
+                                <a href="{{ url('/login') }}">Entrar</a>
                             </li>
                             <li class="@isActive('/register')">
-                                <a href="{{ url('/register') }}">Registro</a>
+                                <a href="{{ url('/register') }}">Cadastrar</a>
                             </li>
                         @else
                             <li class="dropdown">
@@ -81,7 +74,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                    <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Sair</a></li>
                                 </ul>
                             </li>
                         @endif
@@ -96,22 +89,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <h4>Wireless Monitor</h4>
+                        <h4>Monitor de Ruídos Sonoros</h4>
                         <ul class="nav">
                             <li>
-                                <a href="https://github.com/sanusb-grupo/wireless-monitor"
+                                <a href="https://github.com/leocandido/sound-monitor"
                                     target="_blank">
                                     <i class="fa fa-github"></i>
                                     Código Fonte
                                 </a>
-                            </li>
-                            <li>
-                                <a href="https://sanusb-grupo.github.io/wireless-monitor/"
-                                    target="_blank">
-                                    <i class="fa fa-book"></i>
-                                    Documentação
-                                </a>
-                            </li>
+                            </li>                            
                         </ul>
                     </div>
                 </div>

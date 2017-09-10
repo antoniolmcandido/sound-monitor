@@ -25,7 +25,7 @@ class MonitorController extends Controller
             'packages' => $packages,
         ]);
     }
-
+	
     public function ajaxList(Request $request) {
         $list = Monitor::where('user_id', Auth::user()->id)
             ->orderBy('updated_at', 'desc')

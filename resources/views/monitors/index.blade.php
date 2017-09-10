@@ -30,7 +30,7 @@
                 <a href="<?php echo url("{$value->path}/create"); ?>"
                     class="btn btn-primary btn-lg btn-block btn-monitor">
                     <i class="wm-icon wm-icon-{{ $value->icon }}"></i>
-                    Novo {{ $value->description }} Monitor
+                    Novo Monitor {{ $value->description }}
                 </a>
             </div>
             @endforeach
@@ -45,7 +45,7 @@
         <div id="root-app">
             {{-- data comes from ajax --}}
             <p class="text-center">
-                Carregando ...
+                Carregando...
             </p>
         </div>
     </div>
