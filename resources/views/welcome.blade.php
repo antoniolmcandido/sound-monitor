@@ -28,20 +28,22 @@
 		    o monitoramento em tempo real dos ruídos sonoros emitidos pelos 
 		    usuários da Biblioteca do IFCE Campus Caucaia.
                 </p>
-                <h2>Utilizando Wireless Monitor!</h2>
+                <h2>Base do Projeto: Wireless Monitor</h2>
                 <p>
                     O projeto usa como plataforma base o software Wireless Monitor. 
 					Software desenvolvido com objetivo de exibir valores obtidos
 					de dispositivos IoT na nuvem.
                 </p>
-                <div class="btn-group">
-                    <a href="https://github.com/sanusb-grupo/wireless-monitor"
+                <!--
+				<div class="btn-group">
+                    <a href="https://wm.sanusb.tk"
                         class="btn btn-info"
                         target="_blank">
-                        Baixar Wireless Monitor
+                        Site Wireless Monitor
                     </a>
                     <a href="{{ url('https://github.com/atilacamurca') }}" class="btn btn-primary" target="_blank">Desenvolvedor do Wireless Monitor</a>
                 </div>
+				-->
             </div>
             <div class="col-md-6">
                 <a href="https://youtu.be/OMpSB7Z2sR8" data-lity title="Watch Video">
@@ -68,10 +70,10 @@
                     <p>
                         Linguagem de desenvolvimento: C/C++ (na IDE Arduino)
                     </p>
-                    <a href="https://github.com/leocandido/sound-monitor/tree/master/components/esp8266"
+                    <a href="https://cdn-shop.adafruit.com/product-files/2471/0A-ESP8266__Datasheet__EN_v4.3.pdf"
                         class="btn btn-success btn-lg" target="_blank">
                         <i class="fa fa-github"></i>
-                        Código Fonte
+                        Data Sheet
                     </a>
                 </div>
                 <div class="col-md-6">
@@ -84,7 +86,7 @@
                     <a href="https://cdn-shop.adafruit.com/datasheets/MAX4465-MAX4469.pdf"
                         class="btn btn-success btn-lg" target="_blank">
                         <i class="fa fa-github"></i>
-                        Data Sheets
+                        Data Sheet
                     </a>
                 </div>
             </div>            
