@@ -1,13 +1,13 @@
 #include <ESP8266WiFi.h>
 
 #define SSID_REDE     "IFCE CAUCAIA"
-#define SENHA_REDE    "GDWKB97CVXQBJJ4"
+#define SENHA_REDE    "ABCDEFGHIJKLM"
 #define INTERVALO_ENVIO_THINGSPEAK  20000
 
 //constantes e variáveis globais
 //canal: https://thingspeak.com/channels/318623
 char enderecoAPIThingSpeak[] = "api.thingspeak.com";
-String chaveEscritaThingSpeak = "IILLGJFRY94GPDS9";
+String chaveEscritaThingSpeak = "IILLGJFRY94MNOP9";
 long lastConnectionTime; 
 WiFiClient client;
 

@@ -3,7 +3,7 @@
 #include <ArduinoJson.h>
 
 #define SSID_REDE     "IFCE CAUCAIA"
-#define SENHA_REDE    "GDWKB97CVXQBJJ4"
+#define SENHA_REDE    "ABCDEFGHIJKLM"
 //#define SSID_REDE     "Virus"
 //#define SENHA_REDE    "#Leocandido"
 #define INTERVALO_ENVIO_SOUNDMONITOR  15000
