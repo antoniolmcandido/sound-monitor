@@ -1,0 +1,28 @@
+require.config({
+    baseUrl: '/js/',
+    paths: {
+    }
+});
+
+define('jquery', [], function() {
+    return jQuery;
+});
+
+define('moment', [], function () {
+    return moment;
+});
+
+define('Chart', [], function () {
+    return Chart;
+});
+
+require(['jquery', 'monitors/monitor'], function ($, monitor) {
+    var $type = $('input#type');
+    require(['monitors/extras/' + $type.val()], function () {
+        console.info('Component', $type.val(), 'ready.');
+    }, function (err) {
+        console.warn('Component', $type.val(), 'not found.', err);
+    });
+});
+
+//# sourceMappingURL=show-main.js.map

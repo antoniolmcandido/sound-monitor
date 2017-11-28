@@ -1,0 +1,1 @@
+require.config({baseUrl:"/js/",paths:{}}),define("jquery",[],function(){return jQuery}),define("moment",[],function(){return moment}),define("Chart",[],function(){return Chart}),require(["jquery","monitors/monitor"],function(n,e){var r=n("input#type");require(["monitors/components/"+r.val()],function(){},function(n){})});

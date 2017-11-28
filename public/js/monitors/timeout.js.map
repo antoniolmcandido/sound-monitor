@@ -1,0 +1,1 @@
+{"version":3,"sources":["timeout.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","file":"timeout.js","sourcesContent":["define([], function () {\r\n    return 10 * 1000; // 10 seconds\r\n});\r\n"]}

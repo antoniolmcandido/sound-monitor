@@ -1,0 +1,1 @@
+$(function(){function e(e){var n=Mustache.render(t,e);l.append(n)}var t=$("#template-led").html();Mustache.parse(t,tags=["#{","}"]);var l=$("#led-list");$("#new-led").click(function(){e({id:l.find(".led--item").length})}),l.html().trim()||e({id:0}),$(".delete-last-one").click(function(){l.find(".led--item:last").remove()})});
