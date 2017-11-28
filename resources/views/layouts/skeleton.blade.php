@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}"/>
         <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}"/>
-        <title>Monitor de Ruídos Sonoros</title>
+        <title>Sound Monitor</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" crossorigin="anonymous">
@@ -33,7 +33,7 @@
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                         <img alt="logo" src="{{ asset('img/logo.png') }}" />
-                        Monitor de Ruídos Sonoros
+                        Sound Monitor
                     </a>
                 </div>
 
@@ -49,11 +49,13 @@
 										Monitores
 								</a>
 							</li>
+							<!--
 							<li class="@isActive('/phppgadmin')">
 								<a href="{{ url('/phppgadmin') }}" target="_blank">
 										Banco de Dados
 								</a>
 							</li>
+							-->
 						@endif
                     </ul>
 
@@ -64,9 +66,11 @@
                             <li class="@isActive('/login')">
                                 <a href="{{ url('/login') }}">Entrar</a>
                             </li>
+							<!--
                             <li class="@isActive('/register')">
                                 <a href="{{ url('/register') }}">Cadastrar</a>
                             </li>
+							-->
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -89,7 +93,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <h4>Monitor de Ruídos Sonoros</h4>
+                        <h4>Sound Monitor</h4>
                         <ul class="nav">
                             <li>
                                 <a href="https://github.com/leocandido/sound-monitor"

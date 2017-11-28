@@ -23,6 +23,12 @@
                     data-toggle="tab" id="tab-setup">
                     Configurar
                 </a>
+            </li>			
+            <li role="presentation">
+                <a href="#test" aria-controls="view" role="tab"
+                    data-toggle="tab">
+                    Testar
+                </a>
             </li>
 			<li role="presentation">
                 <a href="#level" aria-controls="level" role="tab"
@@ -30,16 +36,10 @@
                     Alterar Limite
                 </a>
             </li>
-            <li role="presentation">
-                <a href="#test" aria-controls="view" role="tab"
-                    data-toggle="tab">
-                    Testar
-                </a>
-            </li>
             <li role="presentation" class="active">
                 <a href="#view" aria-controls="view" role="tab"
                     data-toggle="tab">
-                    Visualizar
+                    Valores
                 </a>
             </li>
 			<li role="presentation">
@@ -60,12 +60,12 @@
 <div class="tab-content">
     <div role="tabpanel" class="tab-pane" id="setup">
         @include('monitors.show.setup', ['auth_json' => $auth_json, 'example_send' => $example_send])		
+    </div>	
+    <div role="tabpanel" class="tab-pane" id="test">
+        @include('monitors.show.test', ['login_cmd' => $login_cmd, 'send_cmd' => $send_cmd])
     </div>
 	<div role="tabpanel" class="tab-pane" id="level">
         @include('monitors.show.level')
-    </div>
-    <div role="tabpanel" class="tab-pane" id="test">
-        @include('monitors.show.test', ['login_cmd' => $login_cmd, 'send_cmd' => $send_cmd])
     </div>
     <div role="tabpanel" class="tab-pane active" id="view">
         @include('monitors.show.view')
@@ -74,5 +74,4 @@
         @include('monitors.show.historico')
     </div>
 </div>
-
 @endsection

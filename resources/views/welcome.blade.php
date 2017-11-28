@@ -82,7 +82,7 @@
                     <p>
                         Microfone Elétrico com ganho ajustável MAX4466
                     </p>
-                    <p>Ideal para captar alterações de som em maiores distancias</p>
+                    <p>Ideal para captar alterações de som em maiores distâncias</p>
                     <a href="https://cdn-shop.adafruit.com/datasheets/MAX4465-MAX4469.pdf"
                         class="btn btn-success btn-lg" target="_blank">
                         <i class="fa fa-github"></i>

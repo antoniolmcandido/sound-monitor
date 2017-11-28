@@ -63,9 +63,13 @@ class SendController extends Controller
                 'monitor_id' => $monitor->id,
                 'data' => $data,
             ]);
-            return response()->json([
-                'data' => $data
-            ], 200);
+			
+			$conexao = pg_connect("host=localhost dbname=sm port=5432 user=sm_user password=9090") or die ("Não foi possível conectar ao servidor PostGreSQL");
+			$res= pg_query($conexao, "SELECT level FROM measure_level WHERE id = '1'");
+			$value = pg_fetch_array($res);
+			$level = $value['level'];			
+			
+            return response()->json(['data' => $data, 'nivelPermitido' => $level], 200);
         }
         $errors = [];
         foreach ($validator->errors() as $e) {
