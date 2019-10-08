@@ -6,7 +6,7 @@ em Bibliotecas de Instituições de Ensino
 
 ## Documentação
 
-<https://github.com/leocandido/sound-monitor/>
+<https://github.com/antoniolmcandido/sound-monitor/>
 
 ## Como começar
 
@@ -44,7 +44,7 @@ php artisan serve
 
 ## Licença
 
-Copyright (C) 2017 Léo Cândido <www.leocandido@gmail.com>
+Copyright (C) 2017 Candido <antoniolmcandido@gmail.com>
 
 Grupo SanUSB <http://sanusb.org>
 
