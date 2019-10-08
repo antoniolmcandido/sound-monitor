@@ -44,7 +44,7 @@ php artisan serve
 
 ## Licença
 
-Copyright (C) 2017 Candido <antoniolmcandido@gmail.com>
+Copyright (C) 2017 Candido
 
 Grupo SanUSB <http://sanusb.org>
 
